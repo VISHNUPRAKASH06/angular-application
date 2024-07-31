@@ -1,0 +1,39 @@
+<!-- 
+
+<div>
+  
+    <ng-content select=".tag"></ng-content>
+    <p>Book1 Description</p>
+    <ng-content select=".but"></ng-content>
+    <ng-content select=".butt"></ng-content>
+  </div>
+  {{inname}}
+  
+   -->
+<table *ngFor="let test of vishnu">
+  <th>
+    Id
+  </th>
+<td>
+  {{test.id}}
+</td>
+<th>
+  Name
+</th>
+<td>
+{{test.name}}
+</td>
+<th>
+  Age
+</th>
+<td>
+{{test.age}}
+</td>
+  
+</table>
+
+<h3>Data Fetch from CHild COmponent</h3>
+{{appHomeLabel}}
+
+
+<button (click)="ClickedMe()">CHild Button2</button>

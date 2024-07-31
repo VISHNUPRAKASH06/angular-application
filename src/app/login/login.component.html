@@ -1,0 +1,22 @@
+
+<div class="card align-items:center" style="width: 100%;">
+   <h1>Login </h1>
+    <div class="card-body">
+        <form class="example-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <mat-form-field class="example-full-width">
+              <mat-label>Username</mat-label>
+              <input matInput  formControlName="username" id="username">
+             
+              
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" formControlName="pass">
+              </mat-form-field>
+              <div class="example-button-row">
+                <button mat-flat-button>Login</button>
+              </div>
+          </form>
+    </div>
+
+

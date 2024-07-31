@@ -1,0 +1,19 @@
+<div class="row">
+    <form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Website</mat-label>
+            <input matInput formControlName="website">
+        </mat-form-field>
+
+        <button mat-button type="submit">{{data ? 'Update' : 'Save'}} </button>
+        <button mat-button type="button">Cancel</button>
+    </form>
+</div>
